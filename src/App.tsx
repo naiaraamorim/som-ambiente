@@ -1,4 +1,4 @@
-import Ambientes from "./components/ambients"
+import Ambientes from "./components/ambientes"
 import Pomodoro from "./components/pomodoro"
 
 

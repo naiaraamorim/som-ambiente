@@ -15,10 +15,10 @@ function App() {
       </header>
       {/* Main Content */}
       <main className="flex-1">
-          <div className="container mx-auto px-4 py-8">
+          <div className="container px-4 py-8">
             <Pomodoro />
           </div>
-          <div className="container mx-auto px-4 py-8">
+          <div className="container px-4 py-8">
             <Ambientes />
           </div>
       </main>

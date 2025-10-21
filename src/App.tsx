@@ -5,20 +5,20 @@ import Pomodoro from "./components/pomodoro"
 function App() {
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-principal flex flex-col justify-between">
 
       {/* Header*/}
       <header className="flex justify-center py-6 px-6">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+        <h1 className="text-2xl text-white sm:text-3xl lg:text-4xl font-bold">
           Som Ambiente
         </h1>
       </header>
       {/* Main Content */}
-      <main className="flex-1">
-          <div className="container px-4 py-8">
+      <main className="flex-1 ">
+          <div className="flex justify-center px-4 py-8">
             <Pomodoro />
           </div>
-          <div className="container px-4 py-8">
+          <div className="flex justify-center px-4 py-8">
             <Ambientes />
           </div>
       </main>

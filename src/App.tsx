@@ -14,7 +14,7 @@ function App() {
         </h1>
       </header>
       {/* Main Content */}
-      <main className="flex-1 ">
+      <main className="flex-1">
           <div className="flex justify-center px-4 py-8">
             <Pomodoro />
           </div>

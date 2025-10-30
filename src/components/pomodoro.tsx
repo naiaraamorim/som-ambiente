@@ -22,7 +22,6 @@ export default function Pomodoro() {
       }, 1000)
       setIntervalo(i);
       setIsAtivo(true);
-      alert("Pomodoro iniciado")
     }
   }
 
@@ -30,7 +29,6 @@ export default function Pomodoro() {
     if(isAtivo && intervalo){
       clearInterval(intervalo);
       setIntervalo(null);
-      alert("Pomodoro pausado")
     }
     setIsAtivo(false);
   }
@@ -42,19 +40,18 @@ export default function Pomodoro() {
     }
     setTimePomodoro(20 * 60);
     setIsAtivo(false);
-    alert("Pomodoro reiniciado")
   }
 
   return (
     <div className="flex flex-col">
-        <div className="bg-gray-800 rounded-sm p-2 text-center">
-            <span className="text-white text-lg ">{Math.floor(timePomodoro / 60)}:{String(timePomodoro % 60).padStart(2, '0')}</span>
+        <div className="bg-secundario opacity-70 rounded-sm p-2 text-center">
+            <span className="text-white text-xl">{Math.floor(timePomodoro / 60)}:{String(timePomodoro % 60).padStart(2, '0')}</span>
         </div>
           <div className="container px-4 py-8">
             <h1 className="text-white">
-              <Play className="inline-block mr-2" onClick={play} size={32}/>
-              <Pause className="inline-block mr-2" onClick={pause} size={32}/>
-              <Undo2 className="inline-block mr-2" onClick={restart} size={32}/>
+              <Play className="inline-block mr-2" onClick={play} size={28}/>
+              <Pause className="inline-block mr-2" onClick={pause} size={28}/>
+              <Undo2 className="inline-block mr-2" onClick={restart} size={28}/>
             </h1>
           </div>
     </div>

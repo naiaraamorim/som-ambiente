@@ -48,11 +48,9 @@ export default function Pomodoro() {
             <span className="text-white text-xl">{Math.floor(timePomodoro / 60)}:{String(timePomodoro % 60).padStart(2, '0')}</span>
         </div>
           <div className="container px-4 py-8">
-            <h1 className="text-white">
-              <Play className="inline-block mr-2" onClick={play} size={28}/>
-              <Pause className="inline-block mr-2" onClick={pause} size={28}/>
-              <Undo2 className="inline-block mr-2" onClick={restart} size={28}/>
-            </h1>
+              <Play className="cursor-pointer inline-block mr-2 text-white" onClick={play} size={28}/>
+              <Pause className="cursor-pointer inline-block mr-2 text-white" onClick={pause} size={28}/>
+              <Undo2 className="cursor-pointer inline-block mr-2 text-white" onClick={restart} size={28}/>
           </div>
     </div>
   );

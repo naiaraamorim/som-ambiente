@@ -67,9 +67,7 @@ export default function Ambientes() {
                 <CloudRain className={`cursor-pointer rounded-2xl w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 ${isChuvaTrovaoPlaying ? "bg-gray-800" : ""}`} onClick={playWind} size={80} />
             </div>
             <div className='flex justify-center p-4 md:p-6 text-white gap-6 sm:gap-8 md:gap-12 lg:gap-16'>
-                <Cloud className='cursor-pointer rounded-2xl w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28' onClick={playWind} size={80} />
-                <CloudLightning className='cursor-pointer rounded-2xl w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28' onClick={playThunder} size={80} />
-                <CloudRain className='cursor-pointer rounded-2xl w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28' onClick={playRain} size={80} />
+               
             </div>
         </div>
     )

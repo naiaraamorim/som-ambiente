@@ -17,7 +17,7 @@ export default function Pomodoro() {
             alert("Pomodoro finalizado");
             return 0;
           }
-          return prev - 1;
+          return prev - 1; 
         })
       }, 1000)
       setIntervalo(i);

@@ -2,19 +2,16 @@ import { Cloud, CloudLightning, CloudRain } from "lucide-react"
 import { useRef, useState } from "react"
 import chuvaSound from './assets/sons/chuva.wav'
 import chuvaTrovaoSound from './assets/sons/chuvaTrovao.wav'
-import ondasSound from './assets/sons/ondas.wav'
 import trovaoSound from './assets/sons/trovao.mp3'
 
 export default function Ambientes() {
 
     const chuvaAudio = useRef< HTMLAudioElement | null>(null);
     const chuvaTrovaoAudio = useRef< HTMLAudioElement | null>(null);
-    const ondasAudio = useRef< HTMLAudioElement | null>(null);
     const trovaoAudio = useRef< HTMLAudioElement | null>(null);
 
     const [isChuvaPlaying, setIsChuvaPlaying] = useState(false);
     const [isChuvaTrovaoPlaying, setIsChuvaTrovaoPlaying] = useState(false);
-    const [isOndasPlaying, setIsOndasPlaying] = useState(false);
     const [isTrovaoPlaying, setIsTrovaoPlaying] = useState(false);
 
     function playRain() {

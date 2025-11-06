@@ -1,6 +1,6 @@
 import Ambientes from "./components/ambientes"
 import Pomodoro from "./components/pomodoro"
-
+import logo from "./components/assets/svg/logo2.png"
 
 function App() {
 
@@ -8,10 +8,10 @@ function App() {
     <div className="min-h-screen bg-principal flex flex-col justify-between">
 
       {/* Header*/}
-      <header className="flex justify-center py-6 px-6">
-        <h1 className="text-2xl text-white sm:text-3xl lg:text-4xl font-bold">
-          Som Ambiente
-        </h1>
+      <header className="flex py-4 px-4">
+        <div className="flex items-center text-xl text-white sm:text-2xl font-bold">
+          <img src={logo} alt="Timora" className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20" /> Timora
+        </div>
       </header>
       {/* Main Content */}
       <main className="flex-1">
